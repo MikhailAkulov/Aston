@@ -166,7 +166,6 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
         return size;
     }
 
-
     // Вычисление ячейки массива для размещения элемента
     private int hash(final K key) {
         int hash = 31;
