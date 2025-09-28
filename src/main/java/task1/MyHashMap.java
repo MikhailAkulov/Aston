@@ -1,9 +1,6 @@
 package task1;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class MyHashMap<K, V> implements MyMap<K, V> {
     /**
@@ -126,8 +123,8 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
             return false;
         }
         if (hashTable[index].getNodes().size() == 1) {
-//            hashTable[index].getNodes().remove(0);
-            hashTable[index] =  null;
+            hashTable[index].getNodes().removeFirst();
+//            hashTable[index] =  null;
             return true;
         }
 
@@ -196,10 +193,14 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
 
             private boolean moveToNextCell() {
                 counterArray++;
-                while (hashTable[counterArray] == null) {
+//                while (hashTable[counterArray] == null) {
+//                    counterArray++;
+//                }
+                while (counterArray < hashTable.length && hashTable[counterArray] == null) {
                     counterArray++;
                 }
-                return hashTable[counterArray] != null;
+//                return hashTable[counterArray] != null;
+                return counterArray < hashTable.length && hashTable[counterArray] != null;
             }
 
             @Override
@@ -241,6 +242,10 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
 
         private void setValue(V value) {
             this.value = value;
+        }
+
+        private void removeElement(Node<K, V> node) {
+            nodes.remove(node);
         }
 
         @Override

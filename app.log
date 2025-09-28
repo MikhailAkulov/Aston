@@ -1,0 +1,58 @@
+[INFO ] 28-09-2025 21:12:42.607 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 28-09-2025 21:12:42.808 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 28-09-2025 21:12:43.074 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 28-09-2025 21:12:43.189 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 28-09-2025 21:12:43.189 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 28-09-2025 21:12:43.191 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 28-09-2025 21:12:43.210 [MLog-Init-Reporter] MLog - MLog clients using log4j2 logging.
+[INFO ] 28-09-2025 21:12:43.273 [main] C3P0Registry - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[INFO ] 28-09-2025 21:12:43.336 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 28-09-2025 21:12:43.358 [main] AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4a363503 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@445b84af [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1bqvqwxbd14dmnolca3u2m|74518890, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ded22f80 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1bqvqwxbd14dmnolca3u2m|1c65121, jdbcUrl -> jdbc:postgresql://localhost:5432/mynewdb, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1bqvqwxbd14dmnolca3u2m|408613cc, numHelperThreads -> 3 ]
+[INFO ] 28-09-2025 21:12:43.750 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 28-09-2025 21:12:44.632 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4cb702ce] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 28-09-2025 21:12:45.180 [main] SQL - 
+    select
+        user0_.id as id1_4_0_,
+        user0_.age as age2_4_0_,
+        user0_.created_at as created_3_4_0_,
+        user0_.email as email4_4_0_,
+        user0_.grade_id as grade_id6_4_0_,
+        user0_.name as name5_4_0_,
+        user0_.details_id as details_7_4_0_,
+        grade1_.id as id1_2_1_,
+        grade1_.grade_level as grade_le2_2_1_,
+        detail2_.id as id1_0_2_,
+        detail2_.address as address2_0_2_,
+        detail2_.phone_number as phone_nu3_0_2_ 
+    from
+        users user0_ 
+    left outer join
+        grades grade1_ 
+            on user0_.grade_id=grade1_.id 
+    left outer join
+        details detail2_ 
+            on user0_.details_id=detail2_.id 
+    where
+        user0_.id=?
+[DEBUG] 28-09-2025 21:14:09.800 [main] SQL - 
+    /* 
+from
+    Grade */ select
+        grade0_.id as id1_2_,
+        grade0_.grade_level as grade_le2_2_ 
+    from
+        grades grade0_
+[INFO ] 28-09-2025 21:15:05.076 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 28-09-2025 21:15:05.301 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 28-09-2025 21:15:05.648 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 28-09-2025 21:15:05.758 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 28-09-2025 21:15:05.758 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 28-09-2025 21:15:05.759 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 28-09-2025 21:15:05.778 [MLog-Init-Reporter] MLog - MLog clients using log4j2 logging.
+[INFO ] 28-09-2025 21:15:05.841 [main] C3P0Registry - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[INFO ] 28-09-2025 21:15:05.894 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 28-09-2025 21:15:05.921 [main] AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e3df7aa8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@de04ca54 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> 1bqvqwxbd14dppor17vujr4|74518890, idleConnectionTestPeriod -> 3000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e3c7213b [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> 1bqvqwxbd14dppor17vujr4|1c65121, jdbcUrl -> jdbc:postgresql://localhost:5432/mynewdb, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> 1bqvqwxbd14dppor17vujr4|408613cc, numHelperThreads -> 3 ]
+[INFO ] 28-09-2025 21:15:06.374 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 28-09-2025 21:15:07.469 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@21263314] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 28-09-2025 21:15:07.993 [main] SQL - select user0_.id as id1_4_0_, user0_.age as age2_4_0_, user0_.created_at as created_3_4_0_, user0_.email as email4_4_0_, user0_.grade_id as grade_id6_4_0_, user0_.name as name5_4_0_, user0_.details_id as details_7_4_0_, grade1_.id as id1_2_1_, grade1_.grade_level as grade_le2_2_1_, detail2_.id as id1_0_2_, detail2_.address as address2_0_2_, detail2_.phone_number as phone_nu3_0_2_ from users user0_ left outer join grades grade1_ on user0_.grade_id=grade1_.id left outer join details detail2_ on user0_.details_id=detail2_.id where user0_.id=?
+[DEBUG] 28-09-2025 21:15:17.510 [main] SQL - select grade0_.id as id1_2_, grade0_.grade_level as grade_le2_2_ from grades grade0_
