@@ -15,7 +15,9 @@ public class Direction {
     @Column(name = "learning_direction")
     private String learningDirection;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}
+            , fetch = FetchType.EAGER
+    )
     @JoinTable(
             name = "user_learning_direction",
             joinColumns = @JoinColumn(name = "direction_id"),
@@ -23,7 +25,8 @@ public class Direction {
     )
     private List<User> users;
 
-    public Direction() {}
+    public Direction() {
+    }
 
     public Direction(String learningDirection) {
         this.learningDirection = learningDirection;
@@ -31,10 +34,7 @@ public class Direction {
 
     @Override
     public String toString() {
-        return "Direction{" +
-                "id=" + id +
-                ", learningDirection='" + learningDirection + '\'' +
-                '}';
+        return "id: " + id + ", learningDirection: " + learningDirection;
     }
 
     public void addUserToDirection(User user) {

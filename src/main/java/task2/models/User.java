@@ -33,7 +33,9 @@ public class User {
     @JoinColumn(name = "grade_id")
     private Grade grade;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}
+            , fetch = FetchType.EAGER
+    )
     @JoinTable(
             name = "user_learning_direction",
             joinColumns = @JoinColumn(name = "user_id"),

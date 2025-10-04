@@ -7,17 +7,26 @@ import task2.models.User;
 import java.util.List;
 
 public interface UserService {
-    void saveUser(User user);
-    User getUser(int id);
-    void updateUser(User user);
-    void deleteUser(int id);
-    List<User> getAllUsers();
+    void saveUser();
+    void getUser();
+    void updateUser();
+    void deleteUser();
+    void getAllUsers();
 
-    void updateDetails(Detail detail);
-    void deleteDetails(Detail detail);
+    void getUserDetails();
+    void deleteDetails();
 
-    void saveGrade(Grade grade);
-    Grade getGrade(int id);
-    void deleteGrade(int id);
-    List<Grade> getAllGrades();
+    void saveGrade();
+    void deleteGrade();
+    void getAllGrades();
+    void getUserGrade();
+    void assignGradeToUser();
+    void getGradeListOfUsers();
+
+    void saveDirection();
+    void deleteDirection();
+    void getAllDirections();
+    void getUserDirections();
+    void addLearningDirectionToUser();
+    void getUsersListByDirection();
 }

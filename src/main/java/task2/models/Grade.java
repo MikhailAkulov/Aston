@@ -18,7 +18,7 @@ public class Grade {
     @OneToMany(
             mappedBy = "grade",
             cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE},
-            fetch = FetchType.LAZY
+            fetch = FetchType.EAGER
     )
     private List<User> users;
 
@@ -31,7 +31,7 @@ public class Grade {
 
     @Override
     public String toString() {
-        return "Grade [id = " + id + ", gradeLevel = " + gradeLevel + "]";
+        return "id = " + id + ", gradeLevel = " + gradeLevel;
     }
 
     public void addUserToGrade(User user) {

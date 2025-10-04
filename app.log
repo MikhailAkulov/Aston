@@ -88,3 +88,55 @@ from
 [DEBUG] 28-09-2025 22:44:32.116 [main] SQL - alter table users add constraint FKocdpyagwqcwnsytdpie5p0qy2 foreign key (grade_id) references grades
 [DEBUG] 28-09-2025 22:44:32.121 [main] SQL - alter table users add constraint FKok114p1uchdpcep753bylw99m foreign key (details_id) references details
 [DEBUG] 28-09-2025 22:44:32.315 [main] SQL - select user0_.id as id1_4_, user0_.age as age2_4_, user0_.created_at as created_3_4_, user0_.email as email4_4_, user0_.grade_id as grade_id6_4_, user0_.name as name5_4_, user0_.details_id as details_7_4_ from users user0_
+[INFO ] 02-10-2025 13:18:56.761 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 02-10-2025 13:18:57.266 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 02-10-2025 13:18:57.938 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 02-10-2025 13:18:58.131 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 02-10-2025 13:18:58.132 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 02-10-2025 13:18:58.132 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 02-10-2025 13:18:58.411 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 02-10-2025 13:18:59.134 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 02-10-2025 13:19:00.266 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79f90a3a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 02-10-2025 13:19:18.637 [main] SQL - select user0_.id as id1_4_, user0_.age as age2_4_, user0_.created_at as created_3_4_, user0_.email as email4_4_, user0_.grade_id as grade_id6_4_, user0_.name as name5_4_, user0_.details_id as details_7_4_ from users user0_
+[INFO ] 02-10-2025 13:21:20.532 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 02-10-2025 13:21:20.868 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 02-10-2025 13:21:21.279 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 02-10-2025 13:21:21.442 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 02-10-2025 13:21:21.443 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 02-10-2025 13:21:21.443 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 02-10-2025 13:21:21.597 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 02-10-2025 13:21:22.053 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 02-10-2025 13:21:23.053 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ddc6db2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 02-10-2025 13:22:59.657 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 02-10-2025 13:22:59.988 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 02-10-2025 13:23:00.408 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 02-10-2025 13:23:00.571 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 02-10-2025 13:23:00.571 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 02-10-2025 13:23:00.572 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 02-10-2025 13:23:00.735 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 02-10-2025 13:23:01.264 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 02-10-2025 13:23:02.461 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@f438904] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 02-10-2025 13:26:17.114 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 02-10-2025 13:26:17.489 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 02-10-2025 13:26:17.932 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 02-10-2025 13:26:18.098 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 02-10-2025 13:26:18.099 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 02-10-2025 13:26:18.099 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 02-10-2025 13:26:18.249 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 02-10-2025 13:26:18.705 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 02-10-2025 13:26:19.656 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3135bf25] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO ] 02-10-2025 13:41:30.795 [main] Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+[WARN ] 02-10-2025 13:41:31.121 [main] deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+[INFO ] 02-10-2025 13:41:31.530 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 02-10-2025 13:41:31.717 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/mynewdb
+[INFO ] 02-10-2025 13:41:31.717 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=myuser}
+[INFO ] 02-10-2025 13:41:31.718 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 02-10-2025 13:41:31.908 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[INFO ] 02-10-2025 13:41:32.427 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+[INFO ] 02-10-2025 13:41:33.384 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1ddc6db2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 02-10-2025 13:42:37.991 [main] SQL - insert into details (address, phone_number) values (?, ?)
+[DEBUG] 02-10-2025 13:42:38.010 [main] SQL - insert into users (age, created_at, email, grade_id, name, details_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 02-10-2025 13:42:45.223 [main] SQL - select user0_.id as id1_4_, user0_.age as age2_4_, user0_.created_at as created_3_4_, user0_.email as email4_4_, user0_.grade_id as grade_id6_4_, user0_.name as name5_4_, user0_.details_id as details_7_4_ from users user0_
+[DEBUG] 02-10-2025 13:42:45.245 [main] SQL - select detail0_.id as id1_0_0_, detail0_.address as address2_0_0_, detail0_.phone_number as phone_nu3_0_0_, user1_.id as id1_4_1_, user1_.age as age2_4_1_, user1_.created_at as created_3_4_1_, user1_.email as email4_4_1_, user1_.grade_id as grade_id6_4_1_, user1_.name as name5_4_1_, user1_.details_id as details_7_4_1_, grade2_.id as id1_2_2_, grade2_.grade_level as grade_le2_2_2_ from details detail0_ left outer join users user1_ on detail0_.id=user1_.details_id left outer join grades grade2_ on user1_.grade_id=grade2_.id where detail0_.id=?
+[DEBUG] 02-10-2025 13:42:45.252 [main] SQL - select user0_.id as id1_4_2_, user0_.age as age2_4_2_, user0_.created_at as created_3_4_2_, user0_.email as email4_4_2_, user0_.grade_id as grade_id6_4_2_, user0_.name as name5_4_2_, user0_.details_id as details_7_4_2_, grade1_.id as id1_2_0_, grade1_.grade_level as grade_le2_2_0_, detail2_.id as id1_0_1_, detail2_.address as address2_0_1_, detail2_.phone_number as phone_nu3_0_1_ from users user0_ left outer join grades grade1_ on user0_.grade_id=grade1_.id left outer join details detail2_ on user0_.details_id=detail2_.id where user0_.details_id=?
+[DEBUG] 02-10-2025 13:43:46.950 [main] SQL - insert into users (age, created_at, email, grade_id, name, details_id) values (?, ?, ?, ?, ?, ?)

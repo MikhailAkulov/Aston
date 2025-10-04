@@ -28,7 +28,7 @@ public class Detail {
 
     @Override
     public String toString() {
-        return "Detail info [phoneNumber: " + phoneNumber + ", address: " + address + "]";
+        return "phoneNumber: " + phoneNumber + ", address: " + address;
     }
 
     public int getId() {
