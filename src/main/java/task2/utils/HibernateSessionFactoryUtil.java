@@ -32,4 +32,8 @@ public class HibernateSessionFactoryUtil {
         }
         return factory;
     }
+
+    public static void setSessionFactory(SessionFactory sessionFactory) {
+        factory = sessionFactory;
+    }
 }

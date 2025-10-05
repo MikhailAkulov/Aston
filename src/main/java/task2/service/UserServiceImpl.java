@@ -327,7 +327,7 @@ public class UserServiceImpl implements UserService {
     }
 
     //region Вспомогательные методы для валидации консольного ввода
-    private static String validateEmail() {
+    String validateEmail() {
         System.out.print("Введите email: ");
         String email = "";
         try {
@@ -346,7 +346,7 @@ public class UserServiceImpl implements UserService {
         return email;
     }
 
-    private static String validateName() {
+    String validateName() {
         System.out.print("Введите имя: ");
         String name = "";
         try {
@@ -365,7 +365,7 @@ public class UserServiceImpl implements UserService {
         return name;
     }
 
-    private static Integer validateAge() {
+    Integer validateAge() {
         System.out.print("Введите возраст: ");
         int age = validateNumberInput();
         while (!User.checkAge(age)) {
@@ -379,7 +379,7 @@ public class UserServiceImpl implements UserService {
         return age;
     }
 
-    private static Integer validateNumberInput() {
+    Integer validateNumberInput() {
         String line = "";
         try {
             line = reader.readLine();
@@ -397,7 +397,7 @@ public class UserServiceImpl implements UserService {
         return Integer.parseInt(line);
     }
 
-    private static String validatePhoneNumber() {
+    String validatePhoneNumber() {
         System.out.print("Введите номер телефона: ");
         String phoneNumber = "";
         try {
@@ -416,7 +416,7 @@ public class UserServiceImpl implements UserService {
         return phoneNumber;
     }
 
-    private static String validateAddress() {
+    String validateAddress() {
         System.out.print("Введите адрес: ");
         String address = "";
         try {
@@ -427,7 +427,7 @@ public class UserServiceImpl implements UserService {
         return address;
     }
 
-    private static boolean userSelectionRequest() {
+    boolean userSelectionRequest() {
         System.out.print("Введите Y или N: ");
         String choice = "";
         try {
@@ -446,25 +446,25 @@ public class UserServiceImpl implements UserService {
         return choice.equalsIgnoreCase("y");
     }
 
-    private static String validateStringInput() {
-        String grade = "";
+    String validateStringInput() {
+        String line = "";
         try {
-            grade = reader.readLine();
+            line = reader.readLine();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-        while (!grade.matches("^[A-Za-z]+$")) {
+        while (!line.matches("^[A-Za-z]+$")) {
             System.out.print("Используйте только латинские вуквы! Попробуйте ещё разок: ");
             try {
-                grade = reader.readLine();
+                line = reader.readLine();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
         }
-        return grade.trim().toUpperCase();
+        return line.trim().toUpperCase();
     }
 
-    private <T> void checkListAndPrint(List<T> list) {
+    <T> void checkListAndPrint(List<T> list) {
         if (list.isEmpty()) {
             System.out.println("Список пуст.");
         } else {
