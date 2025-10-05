@@ -19,4 +19,4 @@
   * [UserDAOImplTest](https://github.com/MikhailAkulov/Aston/blob/main/src/test/java/task2/dao/UserDAOImplTest.java)
   * [UserServiceImplTest](https://github.com/MikhailAkulov/Aston/blob/main/src/test/java/task2/service/UserServiceImplTest.java)
 * Покрытие:
-![coverage](image/testsWithCoverageToTask3.png)
+![coverage](image/TestsWithCoverageToTask3.png)
