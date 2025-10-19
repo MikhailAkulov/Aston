@@ -13,7 +13,6 @@ import task2.utils.HibernateSessionFactoryUtil;
 
 import java.util.List;
 
-
 public class UserDAOImpl implements UserDAO {
 
     private static final Logger logger = LoggerFactory.getLogger(UserDAOImpl.class);
